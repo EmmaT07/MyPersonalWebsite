@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles/contact.css" />
+  </head>
+  <body>
+    <div class="logo"><img src="image/logo.png" alt="" height="100" /></div>
+    <div>
+      <ul class="navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product.html">Product</a></li>
+        <!-- <li><a href="factory.html">Factory</a></li> -->
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="form">
+      <h2 class="topic">CONNECT WITH US</h2>
+      <p>
+        ​For any questions about our products or services, call us at +1 xxx or
+        fill out the form below and a member of our team will reach out to you
+        as soon as possible.
+      </p>
+      <form
+        class="form1"
+        action="https://oim-apis.up.railway.app/form2"
+        method="post"
+      >
+        <fieldset>
+          <div class="info">
+            <label for="name">Name:</label>
+            <input type="text" placeholder="Enter your name here" size="30" />
+          </div>
+          <div class="info">
+            <label for="email">Email:</label>
+            <input type="text" placeholder="Enter your email here" size="30" />
+          </div>
+          <div class="info">
+            <label for="company">Company:</label>
+            <input type="text" placeholder="Enter your email here" size="30" />
+          </div>
+          <div class="info">Comments:</div>
+          <div>
+            <textarea rows="5" cols="50" name="comment"></textarea>
+          </div>
+          <div class="info">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+    <footer>
+      <img src="image/logo.png" alt="" height="200" />
+      <p class="copy">&copy; Emma Personal Website</p>
+    </footer>
+  </body>
+</html>

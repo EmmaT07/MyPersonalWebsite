@@ -3,42 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Proposal for Emma</title>
-    <style>
-      body {
-        background-color: bisque;
-      }
-      h1 {
-        text-align: center;
-        font-family: "Times New Roman", Times, serif;
-      }
-      p {
-        margin-top: 100px;
-        margin-left: 25%;
-        margin-right: 25%;
-        text-align: center;
-      }
-      img {
-        margin-top: 100px;
-        margin-left: 700px;
-      }
-    </style>
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="styles/indexstyle.css" />
   </head>
   <body>
-    <h1>Proposal for Term Project by Emma</h1>
-    <p>
-      I will create a website about Quartz wholesale. The objective of this
-      website is to attract quartz retailers to know more about the company and
-      browse the products. My father has a quartz company so I want to utilize
-      his product information to create my personal website. My target audience
-      are the retailers in the US. In this website, I am going to include
-      company description (I will not just copy paste from the company, I will
-      make something up) in the home page, a product page that includes some of
-      the product information and pictures, a page expalining why people should
-      choose quartz. I will also create a contact me page for future connection
-      with customers.
-    </p>
-    <img src="image/WechatIMG7535.jpeg" alt="quartz" height="400" width="600" />
+    <div class="logo"><img src="image/logo.png" alt="" height="100" /></div>
+    <div>
+      <ul class="navigation">
+        <li><a href="#">Home</a></li>
+        <li><a href="product.html">Product</a></li>
+        <!-- <li><a href="factory.html">Factory</a></li> -->
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="title">
+      <img class="picture" src="image/title.png" alt="" height="700" />
+      <div class="text-overlay">SUNSTONE INTL'LLC</div>
+    </div>
+    <div>
+      <img src="image/feature.png" alt="" />
+    </div>
+    <div class="product">
+      <p class="description">RELIABLE AND QUALITY QUARTZ MANUFACTURER</p>
+      <br />
+      <p class="slogan">A Timeless Beauty that stands the Test of Time</p>
+      <br />
+      <table class="series">
+        <tr class="name">
+          <td>Y-Series</td>
+          <td>S-Series</td>
+          <td>X-Series</td>
+        </tr>
+        <tr>
+          <td class="y"><img src="image/y.png" alt="" height="200" /></td>
+          <td class="s"><img src="image/s.png" alt="" height="200" /></td>
+          <td class="xs"><img src="image/x.png" alt="" height="200" /></td>
+        </tr>
+      </table>
+      <button class="btn"><a href="product.html">View Our Product</a></button>
+    </div>
+    <footer>
+      <img src="image/logo.png" alt="" height="200">
+      <p class="copy">&copy; Emma Personal Website</p>
+    </footer>
   </body>
 </html>

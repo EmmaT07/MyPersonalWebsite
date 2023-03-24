@@ -1,0 +1,64 @@
+body {
+  background-color: rgb(255, 255, 255);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+img {
+  display: block;
+  margin: auto;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navigation {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 8px;
+  list-style: none;
+  padding-top: 25px;
+  padding-left: 25%;
+  padding-right: 25%;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.navigation li {
+  text-align: center;
+}
+a:link {
+  text-decoration: none;
+  color: black;
+}
+a:visited {
+  color: inherit;
+}
+li a:hover {
+  background-color: rgb(226, 226, 226);
+}
+.form {
+  background-color: rgb(238, 238, 237);
+}
+.topic {
+  padding-top: 40px;
+  text-align: center;
+}
+p {
+  text-align: center;
+  font-style: italic;
+}
+.form1 {
+  padding-left: 30%;
+  padding-right: 30%;
+}
+.info {
+  margin-top: 20px;
+}
+footer {
+  background-color: rgba(114, 107, 102, 0.529);
+  padding-bottom: 20px;
+}
+.copy {
+  margin: auto;
+  text-align: right;
+}
