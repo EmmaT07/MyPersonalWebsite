@@ -2,6 +2,12 @@ body {
   background-color: rgb(255, 255, 255);
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+}
+
 img {
   display: block;
   margin: auto;
@@ -51,6 +57,9 @@ li a:hover {
 .product {
   background-color: rgb(78, 77, 77);
 }
+#feature{
+  margin-right: 200px;
+}
 .description {
   color: rgb(239, 240, 240);
   text-align: center;
@@ -65,8 +74,8 @@ li a:hover {
   padding-bottom: 10px;
 }
 .series {
-  padding-left: 150px;
-  margin-left: 300px;
+  padding-left: 100px;
+  margin-left: 100px;
 }
 .name {
   color: rgb(239, 240, 240);
@@ -74,15 +83,15 @@ li a:hover {
   font-weight: bold;
   text-align: center;
 }
-.y {
-  padding-right: 25px;
+#y {
+  /* padding-right: 20px; */
   padding-bottom: 50px;
 }
-.s {
-  padding-right: 25px;
+#s {
+  /* padding-right: 20px; */
   padding-bottom: 50px;
 }
-.xs {
+#xs {
   padding-bottom: 50px;
 }
 .btn {
@@ -99,4 +108,21 @@ footer{
 .copy{
   margin: auto;
   text-align:right;
+}
+
+@media only screen and (max-width: 600px) {
+  navigation {
+    display: block;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  img {
+    width: 50%;
+    height: auto;
+  }
 }

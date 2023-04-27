@@ -18,6 +18,9 @@
         <li><a href="contactus.html">Contact Us</a></li>
       </ul>
     </div>
+    <div>
+      <img class="image" src="image/animation.jpeg" alt="" height="300" loading="lazy"/>
+    </div>
     <div class="form">
       <h2 class="topic">CONNECT WITH US</h2>
       <p>
@@ -27,13 +30,12 @@
       </p>
       <form
         class="form1"
-        action="https://oim-apis.up.railway.app/form2"
-        method="post"
-      >
+        action="https://oim-apis.up.railway.app/form"
+        method="post">
         <fieldset>
           <div class="info">
             <label for="name">Name:</label>
-            <input type="text" placeholder="Enter your name here" size="30" />
+            <input type="text" placeholder="Enter your name here" size="30" name="name"/>
           </div>
           <div class="info">
             <label for="email">Email:</label>
@@ -41,14 +43,19 @@
           </div>
           <div class="info">
             <label for="company">Company:</label>
-            <input type="text" placeholder="Enter your email here" size="30" />
+            <input type="text" placeholder="Enter your email here" size="30" name="company" />
           </div>
+          <div class="info">
+            <label for="number">Phone number</label>
+            <input type="text" placeholder="Enter your number" name="number" id="" />
+          </div>
+
           <div class="info">Comments:</div>
           <div>
             <textarea rows="5" cols="50" name="comment"></textarea>
           </div>
           <div class="info">
-            <button type="submit">Submit</button>
+            <button type="submit" id="btn">Submit</button>
             <button type="reset">Reset</button>
           </div>
         </fieldset>
@@ -58,5 +65,31 @@
       <img src="image/logo.png" alt="" height="200" />
       <p class="copy">&copy; Emma Personal Website</p>
     </footer>
+
+    <script>
+      function myForm() {
+        const name = documemt.querySelector('input[name="name"]');
+        const number = document.querySelector('input[name="number"]');
+        const company = document.querySelector('input[name="company"]');
+
+        if (myForm["name"].value.length == 0) {
+          alert("Please enter your information!");
+          return;
+        }
+        if (isNaN(myForm["number"].value)) {
+          alert("Please enter your number!");
+          return;
+        }
+        if (myForm["company"].value.length == 0) {
+          alert("Please enter your information!");
+          return;
+        }
+      }
+
+      document.querySelector("#btn"),
+        addEventListener("click", function () {
+          myForm();
+        });
+    </script>
   </body>
 </html>

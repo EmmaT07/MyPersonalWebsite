@@ -22,6 +22,10 @@
       <img class="display" src="image/display2.png" alt="" />
       <div class="text-overlay">ABOUT US</div>
     </div>
+    <div>
+      <h1></h1>
+      <button id="learn">What is Quartz?</button>
+    </div>
     <div class="statement">
       <h2 class="topic">OUR MISSION STATEMEMT</h2>
       <p class="para">
@@ -56,5 +60,25 @@
       <img src="image/logo.png" alt="" height="200" />
       <p class="copy">&copy; Emma Personal Website</p>
     </footer>
+    <script>
+      function learnInfo() {
+        const info = window.prompt(
+          "Type quartz or calacatta to learn more about them! "
+        );
+        const h1El = document.querySelector("h1");
+
+        if (info == "quartz") {
+          h1El.innerText =
+            "Quartz is one of the most abundant minerals found in the Earth's crust and has many uses, including in electronics, watches, jewelry, construction materials, and as a component in the manufacturing of glass. It is also a popular material for crystal healing and is believed by some to have metaphysical properties that can benefit the mind and body.";
+        } else if (info == "calacatta") {
+          h1El.innerText =
+            "Calacatta is a type of quartz that is designed to mimic the look of natural Calacatta marble. Calacatta quartz typically features a white or cream background with bold veining in shades of gray or black. It is a popular choice for kitchen and bathroom countertops due to its durability, resistance to staining and scratching, and low maintenance requirements. Unlike natural marble, which can be porous and requires regular sealing, Calacatta quartz is non-porous and does not require sealing.";
+        }
+      }
+
+      document.querySelector("button").onclick = function () {
+        learnInfo();
+      };
+    </script>
   </body>
 </html>

@@ -23,7 +23,7 @@
       <div class="text-overlay">SUNSTONE INTL'LLC</div>
     </div>
     <div>
-      <img src="image/feature.png" alt="" />
+      <img id="feature" src="image/feature.png" alt="" loading="lazy"/>
     </div>
     <div class="product">
       <p class="description">RELIABLE AND QUALITY QUARTZ MANUFACTURER</p>
@@ -37,16 +37,104 @@
           <td>X-Series</td>
         </tr>
         <tr>
-          <td class="y"><img src="image/y.png" alt="" height="200" /></td>
-          <td class="s"><img src="image/s.png" alt="" height="200" /></td>
-          <td class="xs"><img src="image/x.png" alt="" height="200" /></td>
+          <td class="sepic" id="y">
+            <img src="image/y.png" alt="" height="200" />
+          </td>
+          <td class="sepic" id="s">
+            <img src="image/s.png" alt="" height="200" />
+          </td>
+          <td class="sepic" id="xs">
+            <img src="image/x.png" alt="" height="200" />
+          </td>
         </tr>
       </table>
       <button class="btn"><a href="product.html">View Our Product</a></button>
     </div>
     <footer>
-      <img src="image/logo.png" alt="" height="200">
+      <img src="image/logo.png" alt="" height="200" />
       <p class="copy">&copy; Emma Personal Website</p>
     </footer>
+    <script>
+      function enlargeImage1() {
+        const myImg = document.querySelector("#y img");
+        let h = myImg.height;
+        h = h + 20;
+        myImg.height = h;
+      }
+
+      document
+        .querySelector("#y img")
+        .addEventListener("mouseover", function () {
+          enlargeImage1();
+        });
+
+      function shrinkImage1() {
+        const myImg = document.querySelector("#y img");
+        let h = myImg.height;
+        h = 200;
+        myImg.height = h;
+      }
+
+      document
+        .querySelector("#y img")
+        .addEventListener("mouseout", function () {
+          shrinkImage1();
+        });
+
+
+      function enlargeImage2() {
+        const myImg = document.querySelector("#s img");
+        let h = myImg.height;
+        h = h + 20;
+        myImg.height = h;
+      }
+
+      document
+        .querySelector("#s img")
+        .addEventListener("mouseover", function () {
+          enlargeImage2();
+        });
+
+
+      function shrinkImage2() {
+        const myImg = document.querySelector("#s img");
+        let h = myImg.height;
+        h = 200;
+        myImg.height = h;
+      }
+
+      document
+        .querySelector("#s img")
+        .addEventListener("mouseout", function () {
+          shrinkImage2();
+        });
+
+        function enlargeImage3() {
+        const myImg = document.querySelector("#xs img");
+        let h = myImg.height;
+        h = h + 20;
+        myImg.height = h;
+      }
+
+      document
+        .querySelector("#xs img")
+        .addEventListener("mouseover", function () {
+          enlargeImage3();
+        });
+
+
+      function shrinkImage3() {
+        const myImg = document.querySelector("#xs img");
+        let h = myImg.height;
+        h = 200;
+        myImg.height = h;
+      }
+
+      document
+        .querySelector("#xs img")
+        .addEventListener("mouseout", function () {
+          shrinkImage3();
+        });
+    </script>
   </body>
 </html>
